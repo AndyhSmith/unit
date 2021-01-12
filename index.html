@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+ 	<meta name="description" content="An interactive javascript experiment.">
+ 	<meta name="keywords" content="JavaScript, HTML5, game, bugs, experiment">
+ 	<meta name="author" content="Andy Smith">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title> Project Bugs | Experiment </title>
+	<link rel="stylesheet" href="projectBugs.css">
+	<link rel="stylesheet" href="../../css/clearButton.css">
+	<link rel="stylesheet" href="../../css/noStyleLink.css">
+	<link rel="stylesheet" href="../../css/noScroll.css">
+	<!-- <img id="fish" style="width: 0px; height: 0px;"  src="marine.png" alt="bugsIMG"> -->
+</head>
+<body id="body">
+	<div id="background"></div>
+	<canvas id="myCanvas" onclick="mouseClick(event)"></canvas>
+	<a href="/" class="noStyleLink" style="color:white;"><div id="exitToHome" class="clearButton" style="color:white"><span style="color:white">X</span></div></a>
+	
+	
+	<div id="toggleBugs" class="clearButton" onclick="toggleBugs()">Add Bugs</div>
+	<div id="toggleZones" class="clearButton" onclick="toggleZones()">Add Zones</div>
+	<div id="clearBugs" class="clearButton" onclick="clearBugs()">Clear Bugs</div>
+	<div id="clearZones" class="clearButton" onclick="clearZones()">Clear Zones</div>
+	<div id="clearSelected" class="clearButton" onclick="clearSelected()">Clear Selected</div>
+	<script src="./projectBugs.js"></script>
+
+</body>
+</html>

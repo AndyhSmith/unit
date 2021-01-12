@@ -1,0 +1,103 @@
+#fish_head{
+	position:absolute;
+	width: 40px;
+	height: 40px;
+	background-color: orange;
+	bottom: 50%;
+	left: 50%;
+	z-index:1;
+	
+}
+
+#zone {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	border:solid;
+	border-color:rgb(0,255,0);
+	border-radius:50%;
+	width:200px;
+	height:200px;
+	z-index:0;
+
+}
+
+#background {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: green;
+	/* image-rendering: crisp-edges; */
+	image-rendering: pixelated;
+	background-image: url("sandy_tile.png");
+	background-size: 128px 128px;
+	
+}
+
+#myCanvas {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	
+}
+
+
+#toggleBugs {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	height: 40px;
+	max-height: 40px;
+	line-height:40px;
+	padding: 0px 15px;
+	color: white;
+}
+
+
+#toggleZones {
+	position: fixed;
+	bottom: 50px;
+	left: 10px;
+	height: 40px;
+	max-height: 40px;
+	line-height:40px;
+	padding: 0px 15px;
+	color: white;
+}
+
+
+#clearBugs {
+	position: fixed;
+	bottom: 90px;
+	left: 10px;
+	height: 40px;
+	max-height: 40px;
+	line-height:40px;
+	padding: 0px 15px;
+	color: white;
+}
+
+#clearZones {
+	position: fixed;
+	bottom: 130px;
+	left: 10px;
+	height: 40px;
+	max-height: 40px;
+	line-height:40px;
+	padding: 0px 15px;
+	color: white;
+}
+
+#clearSelected {
+	position: fixed;
+	bottom: 170px;
+	left: 10px;
+	height: 40px;
+	max-height: 40px;
+	line-height:40px;
+	padding: 0px 15px;
+	color: white;
+}
+
