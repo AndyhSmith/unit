@@ -31,8 +31,8 @@
 	background-color: green;
 	/* image-rendering: crisp-edges; */
 	image-rendering: pixelated;
-	background-image: url("sandy_tile.png");
-	background-size: 128px 128px;
+	background-image: url("snow.png");
+	background-size: 32px 32px;
 	
 }
 
@@ -64,7 +64,7 @@
 	max-height: 40px;
 	line-height:40px;
 	padding: 0px 15px;
-	color: white;
+	color: black;
 }
 
 
@@ -76,7 +76,7 @@
 	max-height: 40px;
 	line-height:40px;
 	padding: 0px 15px;
-	color: white;
+	color: black;
 }
 
 #clearZones {
@@ -87,7 +87,7 @@
 	max-height: 40px;
 	line-height:40px;
 	padding: 0px 15px;
-	color: white;
+	color: black;
 }
 
 #clearSelected {
@@ -98,6 +98,6 @@
 	max-height: 40px;
 	line-height:40px;
 	padding: 0px 15px;
-	color: white;
+	color: black;
 }
 
