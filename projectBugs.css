@@ -22,25 +22,36 @@
 
 }
 
-#background {
+/* #background {
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	height: 100%;
 	background-color: green;
-	/* image-rendering: crisp-edges; */
 	image-rendering: pixelated;
 	background-image: url("snow.png");
 	background-size: 32px 32px;
 	
-}
+} */
 
 #myCanvas {
 	position: fixed;
+	width: 100%;
+	height: 100%;
 	top: 0px;
 	left: 0px;
 	
+}
+
+#backgroundCanvas {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
 }
 
 
@@ -101,3 +112,167 @@
 	color: black;
 }
 
+/* Info Options */
+
+
+#info-dark-background {
+    background-color: rgba(0,0,0,.3);
+    height: 100%;
+	left: 0px;
+    position: fixed;
+	top: 0px;
+    width: 100%;
+    z-index: 3;
+}
+
+#info-content {
+    background-color: white;
+    font-size: 18px;
+    height: 80%;
+    left: 50%;
+    max-height: 700px;
+    max-width: 600px;
+    min-height: 475px;
+    min-width: 250px;
+    padding-left: 20px;
+	padding-right: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+#info-close {
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 50px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 2;
+}
+
+#info-close:hover {
+    background-color: #ccc;
+}
+
+/* S E L E C T O R   O P T I O N S */
+#info-button {
+    position: fixed; 
+    top: 10px; 
+}
+#info-button:hover {
+    border-color: steelblue;
+}
+
+
+#back-action {
+    position: fixed; 
+    top: 60px; 
+}
+#back-action:hover {
+    border-color: steelblue;
+}
+
+button {
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    left: 0px;
+    border-style: solid;
+    border-color: black;
+    border-left: 0px;
+    border-right-width: 10px;
+    transition: width .2s, border-color .4s;
+    outline: none;
+    box-shadow: none;
+    background-color: white;
+    padding-right: 0px;
+    padding-left: 0px;
+	z-index: 2
+}
+
+button:hover {
+    width: 100px;
+}
+
+/* G A M E   A C T I O N S */
+.action {
+    cursor: pointer;
+    width: 70px;
+    /* height: 40px; */
+    right: 0px;
+    border-style: solid;
+    border-color: black;
+    border-right: 0px;
+    border-left-width: 10px;
+    transition: width .2s, border-color .4s;
+    outline: none;
+    box-shadow: none;
+    background-color: white;
+    padding: 10px;
+	z-index: 2
+}
+
+#action-shop {
+	position: fixed; 
+    top: 10px; 
+}
+
+#action-damage {
+	position: fixed; 
+    top: 60px; 
+}
+
+#action-speed {
+	position: fixed; 
+    top: 110px; 
+}
+
+.action:hover {
+    width: 90px;
+	border-color: red;
+}
+
+/* S H O P  */
+#shop-dark-background {
+    background-color: rgba(0,0,0,.3);
+    height: 100%;
+	left: 0px;
+    position: fixed;
+	top: 0px;
+    width: 100%;
+    z-index: 3;
+}
+
+.card {
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+  }
+  
+.card button {
+	width: 150px;
+	background-color: #92DE34;
+	cursor: pointer;
+	border: none;
+	padding: 5px;
+	/* border-radius: 30px; */
+}
+
+.card p {
+	margin: 0px;
+}
+
+.card button:hover {
+	background-color: #c6ec98;
+}

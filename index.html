@@ -6,25 +6,76 @@
  	<meta name="keywords" content="JavaScript, HTML5, game, bugs, experiment">
  	<meta name="author" content="Andy Smith">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title> Project Bugs | Experiment </title>
+	<title> StarCraft Survival </title>
 	<link rel="stylesheet" href="projectBugs.css">
-	<link rel="stylesheet" href="../../css/clearButton.css">
-	<link rel="stylesheet" href="../../css/noStyleLink.css">
-	<link rel="stylesheet" href="../../css/noScroll.css">
-	<!-- <img id="fish" style="width: 0px; height: 0px;"  src="marine.png" alt="bugsIMG"> -->
+	<script src="https://kit.fontawesome.com/68a99d09f4.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body id="body">
+	<!-- Information -->
+	<div id="info-dark-background">
+		<div id="info-content">
+			<div id="info-close" onclick="infoToggle()">&times;</div>
+			<h1>StarCraft Survival</h1>
+			<p>
+				Your home world is being attacked by alien zergling monsters. Your government will pay you for every kill you make. Good luck!
+			</p>
+
+			<p>
+				<b>Directions:</b> Click or tap to move. Buy upgrades from the store.
+			</p>
+
+			<p> <b>About & Sprite Sheet Credits:</b>
+				StarCraft Survival was programmed in javasript without external libraries.
+				The player texture and the enemy texture both come from a video game called Starcraft:
+				<a href="https://us.shop.battle.net/en-us/family/starcraft-remastered?blzcmp=blizzard_hp_Starcraft:Remastered_card" target="_blank">Blizzard/Starcraft</a>
+				Background Textures: <a href="Attribution.txt" target="_blank">Attribution Link</a>
+			</p>
+		
+			
+			<!-- <p><i>Copyright © Andy Smith 2021</i></p> -->
+		</div>
+	</div>
+
+	<!-- Shop -->
+	<div style="display:none;" id="shop-dark-background">
+		<div id="info-content">
+			<div id="info-close" onclick="shopToggle()">&times;</div>
+			<h1>Upgrade Store (Work in Progress)</h1>
+			<p>Purchase upgrades to improve your chances of survival.</p>
+			<p>Your Zerg Pelts: <span id="zerg-pelts">0</span></p>
+			<div class="card">
+				<p><b>(<span id="player-range-level">0</span>) Range Boost</b> Cost: <span id="range-price"></span></p>
+				<p>Increase your range from <span id="player-range">0</span> to <span id="player-range-add">0</span></p>
+				<p><button onclick="boostRange()">Purchase</button></p>
+			</div>
+		
+			<div class="card">
+				<p><b>(<span id="player-damage-level">0</span>) Damage Boost</b> Cost: <span id="damage-price"></span></p>
+				<p>Increase your damage from <span id="player-damage">0</span> to <span id="player-damage-add">0</span></p>
+				<p><button onclick="boostDamage()">Purchase</button></p>
+			</div>
+
+
+			<!-- <p><i>Copyright © Andy Smith 2021</i></p> -->
+		</div>
+	</div>
+
+	<button id="info-button" onclick="infoToggle()">Info</button>
+	<a href="https://www.andyhsmith.com"><button id="back-action">Home</button></a>
+
+	<div class="action" id="action-shop" onclick="shopToggle()"><i class="fas fa-warehouse"></i> Store</div>
+
+
 	<div id="background"></div>
+	<canvas id="backgroundCanvas" onclick="mouseClick(event)"></canvas>
 	<canvas id="myCanvas" onclick="mouseClick(event)"></canvas>
-	<a href="/" class="noStyleLink" style="color:white;"><div id="exitToHome" class="clearButton" style="color:white"><span style="color:white">X</span></div></a>
 	
 	
-	<div id="toggleBugs" class="clearButton" onclick="toggleBugs()">Add Bugs</div>
-	<div id="toggleZones" class="clearButton" onclick="toggleZones()">Add Zones</div>
-	<div id="clearBugs" class="clearButton" onclick="clearBugs()">Clear Bugs</div>
-	<div id="clearZones" class="clearButton" onclick="clearZones()">Clear Zones</div>
-	<div id="clearSelected" class="clearButton" onclick="clearSelected()">Clear Selected</div>
 	<script src="./projectBugs.js"></script>
+	<script src="./background.js"></script>
+
 
 </body>
 </html>
